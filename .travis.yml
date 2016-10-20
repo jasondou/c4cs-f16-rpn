@@ -9,6 +9,6 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 script: 
-  coverage run test_rpn.py
+  coverage --source=rpn.py test_rpn.py
 after_success:
   - coveralls
